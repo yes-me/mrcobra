@@ -1,0 +1,121 @@
+
+
+.service-section {
+    width: 100%;
+    padding: 0 0 40px 0;
+    text-align: center;
+
+    @media (--at-least-tablet) {
+        padding: 0 30px 40px 30px;
+        max-width: 1023px;
+        margin: 0 auto;
+    }
+
+    @media (--at-least-laptop) {
+        padding: 0 31px 40px 31px;
+        max-width: 1280px;
+    }
+
+    .service-lists {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .service-tile {
+        -ms-flex: 0 1 100%;
+        flex: 0 1 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        margin-bottom: 27px;
+        border: none;
+        background-color: #fff;
+        text-decoration: none;
+
+        @media (--at-least-tablet) {
+
+            -ms-flex: 0 1 48.03%;
+            flex: 0 1 48.03%;
+            margin-right: 3.907%;
+
+
+            &:nth-child(2n) {
+                 margin-right: 0;
+             }
+
+        }
+
+        @media (--at-least-laptop) {
+        
+           
+            -ms-flex: 0 1 30.699%;
+            flex: 0 1 30.699%;
+            margin-right: 3.907%;
+        
+            &:nth-child(2n) {
+                 margin-right: 3.907%;
+             }
+        
+            &:nth-child(3n) {
+                 margin-right: 0;
+             }
+        }
+
+        .service-link img {
+            width: 100%;
+            height: auto;
+        }
+
+    }
+
+}
+
+.fullwidth-section {
+    background: #f8f8f8;
+    text-align: center;
+    width: 100%;
+    padding: 40px 0;
+    margin-bottom: 35px;
+
+    h1 {
+        font-size: 34px;
+        line-height: 1.2;
+        margin: 0 0 10px 0;
+        color: #4b4949;
+    }
+
+    .description {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #4b4949;
+    }
+}
+
+.fullwidth-section-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+        padding-top: 40px;
+        font-size: 32px;
+        color: #4b4949;
+    }
+}
+
+.fullwidth-section-content-list {
+
+    & > p {
+        display: inline-block;
+    }
+
+}

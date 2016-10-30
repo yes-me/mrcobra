@@ -1,0 +1,71 @@
+
+.pagination {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    line-height: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    color: #2c394c;
+    text-transform:uppercase;
+
+    .currentPage {
+        color: #dcdcdc;
+    }
+
+    ul {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         list-style-type: none;
+         padding: 0;
+         margin: 0;
+         justify-content: center;
+    }
+
+    li {
+        flex-basis: auto;
+        margin: .25em 0;
+        text-align: center;
+        border-left: 1px solid #dcdcdc;
+        padding: 0 13px;
+        cursor:pointer;
+
+        &:hover{
+            text-decoration:underline;
+        }
+
+        &:nth-child(2).currentPage {
+             border-left: none;
+        }
+
+
+    }
+
+    .previous {
+        border-left: none;
+        padding: 0 13px 0 6px;
+        /*  ** this commented style may need to handle with JavaScript when users navigate between pages **
+        display:none;
+        */
+    }
+
+    .next {
+        padding: 0 6px 0 13px;
+    }
+
+    .arrow {
+        font-size: 18px;
+        line-height: 10px;
+    }
+
+}
+
+.pagination .pn > .lastdots:before,
+.pagination .pn > .lastdots::before,
+.pagination .pn > .firstdots:after,
+.pagination .pn > .firstdots::after {
+    content: ' ... '
+}

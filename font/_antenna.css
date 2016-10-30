@@ -1,0 +1,20 @@
+
+@font-face {
+font-family: 'Antenna';
+src: url("../font/a875a3f9-0b56-4a09-b66e-c3033898bcd5-3.woff") format("woff"),
+url("../font/a875a3f9-0b56-4a09-b66e-c3033898bcd5-1.ttf") format("truetype");
+font-style: normal;
+font-weight: 500;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../font/Roboto-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+:root {
+    --primary: 'Antenna', 'Helvetica Neue', Arial, sans-serif;
+}

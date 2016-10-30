@@ -1,0 +1,55 @@
+.main-video {
+
+    background-color: var(--black);
+    height: 650px;
+    width: 100%;
+    margin-bottom: 50px;
+
+    .video-content {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+
+        padding: 40px 0;
+        font-size: 15px;
+        font-weight: 400;
+        color: #fff;
+
+        h2 {
+            font-size: 20px;
+        }
+        .credit {
+            font-size: 13px;
+            font-style: italic;
+        }
+
+    }
+}
+
+.video-player-overlay {
+
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    text-align:center;
+    z-index: 10;
+    background-color: var(--black);
+    display: none;
+
+    .video-embed {
+        padding-top: 100px;
+    }
+
+    .overlay-close {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+}

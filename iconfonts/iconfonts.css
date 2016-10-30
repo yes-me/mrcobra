@@ -1,0 +1,308 @@
+
+@path: "../iconfonts";
+
+@font-face {
+  font-family: 'Web-Font';
+  src: url("../iconfonts/webfonts.woff2") format('woff2'),
+  url('../iconfonts/webfonts.woff') format('woff'),
+  url('../iconfonts/webfonts.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --icons {
+    display: inline-block;
+    font-family: 'Web-Font';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  };
+}
+
+.web-icons_ {
+  &gallery::before {
+  @apply --icons;
+    content: "\e900";
+  }
+
+  &grid::before {
+  @apply --icons;
+    content: "\e901";
+  }
+
+  &rss::before {
+  @apply --icons;
+    content: "\e624";
+  }
+
+  &star::before {
+  @apply --icons;
+    content: "\e623";
+  }
+
+  &calendar::before {
+  @apply --icons;
+    content: "\e61b";
+  }
+
+  &flag::before {
+  @apply --icons;
+    content: "\e61c";
+  }
+
+  &trophy::before {
+  @apply --icons;
+    content: "\e61d";
+  }
+
+  &fbMessenger::before {
+  @apply --icons;
+    content: "\e61e";
+  }
+
+  &pinterest::before {
+  @apply --icons;
+    content: "\e61f";
+  }
+
+  &instagram::before {
+  @apply --icons;
+    content: "\e620";
+  }
+
+  &whatsapp::before {
+  @apply --icons;
+    content: "\e621";
+  }
+
+  &more::before {
+  @apply --icons;
+    content: "\e622";
+  }
+
+  &expand::before {
+  @apply --icons;
+    content: "\e608";
+  }
+
+  &collapse::before {
+  @apply --icons;
+    content: "\e609";
+  }
+
+  &reddit::before {
+  @apply --icons;
+    content: "\e605";
+  }
+
+  &stumble::before {
+  @apply --icons;
+    content: "\e606";
+  }
+
+  &email::before {
+  @apply --icons;
+    content: "\e607";
+  }
+
+  &newwindow::before {
+  @apply --icons;
+    content: "\e604";
+  }
+
+  &reset::before {
+  @apply --icons;
+    content: "\e601";
+  }
+
+  &podcast::before {
+  @apply --icons;
+    content: "\e602";
+  }
+
+  &podcast-alt::before {
+  @apply --icons;
+    content: "\e603";
+  }
+
+  &search::before {
+  @apply --icons;
+    content: "\e600";
+  }
+
+  &share-btn::before {
+  @apply --icons;
+    content: "\e002";
+  }
+
+  &video::before {
+  @apply --icons;
+    content: "\e00b";
+  }
+
+  &tag::before {
+  @apply --icons;
+    content: "\e00a";
+  }
+
+  &fang::before {
+  @apply --icons;
+    content: "\e009";
+  }
+
+  &twitter::before {
+  @apply --icons;
+    content: "\e008";
+  }
+
+  &google::before {
+  @apply --icons;
+    content: "\e007";
+  }
+
+  &facebook::before {
+  @apply --icons;
+    content: "\e006";
+  }
+
+  &print::before {
+  @apply --icons;
+    content: "\e00c";
+  }
+
+  &arrow-up::before {
+  @apply --icons;
+    content: "\e00d";
+  }
+
+  &arrow-down::before {
+  @apply --icons;
+    content: "\e00e";
+  }
+
+  &menu::before {
+  @apply --icons;
+    content: "\e00f";
+  }
+
+  &autoplay::before {
+  @apply --icons;
+    content: "\e010";
+  }
+
+  &caption::before {
+  @apply --icons;
+    content: "\e011";
+  }
+
+  &thumbnail::before {
+  @apply --icons;
+    content: "\e012";
+  }
+
+  &signout::before {
+  @apply --icons;
+    content: "\e013";
+  }
+
+  &signin::before {
+  @apply --icons;
+    content: "\e014";
+  }
+
+  &arrow::before {
+  @apply --icons;
+    content: "\e60a";
+  }
+
+  &arrow-back::before {
+  @apply --icons;
+    content: "\e60b";
+  }
+
+  &check::before {
+  @apply --icons;
+    content: "\e60d";
+  }
+
+  &yahoo::before {
+  @apply --icons;
+    content: "\e60e";
+  }
+
+  &msn::before {
+  @apply --icons;
+    content: "\e60f";
+  }
+
+  &linkedin::before {
+  @apply --icons;
+    content: "\e610";
+  }
+
+  &help::before {
+  @apply --icons;
+    content: "\e611";
+  }
+
+  &photo::before {
+  @apply --icons;
+    content: "\e000";
+  }
+
+  &enlarge::before {
+  @apply --icons;
+    content: "\e612";
+  }
+
+  &live::before {
+  @apply --icons;
+    content: "\e613";
+  }
+
+  &comments::before {
+  @apply --icons;
+    content: "\e001";
+  }
+
+  &external-link::before {
+  @apply --icons;
+    content: "\e614";
+  }
+
+  &share::before {
+  @apply --icons;
+    content: "\e615";
+  }
+
+  &circle::before {
+  @apply --icons;
+    content: "\e616";
+  }
+
+  &arrow-right::before {
+  @apply --icons;
+    content: "\e617";
+  }
+
+  &arrow-left::before {
+  @apply --icons;
+    content: "\e618";
+  }
+
+  &top::before {
+  @apply --icons;
+    content: "\e619";
+  }
+
+  &youtube::before {
+  @apply --icons;
+    content: "\e61a";
+  }
+}

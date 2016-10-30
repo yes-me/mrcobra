@@ -1,0 +1,11 @@
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../font/Roboto-Regular.ttf") format("truetype");
+    font-style: normal;
+}
+
+:root {
+    --primary: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
