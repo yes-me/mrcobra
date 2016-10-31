@@ -1,0 +1,157 @@
+
+.section-fullimage {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 767px;
+
+
+
+    @media (--at-least-tablet) {
+        max-width: 768px;
+    }
+
+    @media (--at-least-laptop) {
+        max-width: 990px;
+    }
+}
+
+.section-tiles-grid {
+    padding-bottom: 60px;
+}
+
+.section-tiles-grid,
+.component {
+    &:before,
+    &:after {
+        content: ' ';
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+
+
+.tile-content-text {
+    padding: 46px 40px 0;
+    float: left;
+    height: calc(100% - 38px);
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.tile-content-headline {
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 300;
+    letter-spacing: 0em;
+    margin: 29px 0 0;
+    word-wrap: break-word;
+}
+
+
+.tile-size-1 {
+    width: 485px;
+    height: 382px;
+    margin: 5px 5px;
+    position: relative;
+    z-index: 0;
+}
+
+.tile-size-2 {
+    width: 980px;
+    height: 382px;
+    margin: 10px 5px;
+    position: relative;
+    z-index: 0;
+    float: left;
+    color: #fff;
+
+    &:before,
+    &:after {
+         content: ' ';
+         display: table;
+     }
+
+    &:after {
+         clear: both;
+     }
+
+    &:hover {
+        z-index: 1;
+    }
+
+    .component-content {
+        margin: 0;
+        box-shadow: none;
+        width: 980px;
+        height: 382px;
+        overflow: hidden;
+        -webkit-transition: padding 0.15s cubic-bezier(0.4, 0, 0.2, 1),margin 0.15s cubic-bezier(0.4, 0, 0.2, 1),box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: padding 0.15s cubic-bezier(0.4, 0, 0.2, 1),margin 0.15s cubic-bezier(0.4, 0, 0.2, 1),box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            padding: 6px 10px;
+            margin: -6px -10px;
+            box-shadow: 0 49.5px 70px -24.5px rgba(0,0,0,0.3);
+        }
+    }
+
+    .tile {
+        width: 980px;
+        height: 382px;
+        padding: 6px 10px;
+        margin: -6px -10px;
+    }
+
+    .tile-content {
+        width: 1000px;
+        height: 394px;
+        margin: -6px -10px;
+        display: table;
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .tile-link {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        color: currentColor;
+        text-decoration: none;
+    }
+    .tile-image {
+        width: 747px;
+        height: 394px;
+        position: absolute;
+        right: 0;
+        z-index: 0;
+    }
+
+    .tile-content-text {
+        width: 25%;
+    }
+
+    .pub-info {
+        position: relative;
+        color: #fff;
+        font-size: 12px;
+        line-height: 1.5;
+        font-weight: 600;
+        letter-spacing: .1em;
+
+        span {
+            display: block;
+        }
+    }
+}
+
+.tile-theme-dark .tile-content {
+    background-color: var(--theme-dark);
+}
