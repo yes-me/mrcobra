@@ -11,7 +11,7 @@
 		</section>
 
         <section class="media-grid">
-            <span class="section-heading">More Mr. Cobra Videos</span>
+            <span class="section-heading">Mr. Cobra Videos</span>
 
             <div class="media-grid-container">
             <?php

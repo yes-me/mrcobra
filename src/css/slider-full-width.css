@@ -55,8 +55,9 @@
 .slider {
     overflow: hidden;
     width: 100%;
-    height: 500px;
+    height: 620px;
     position: relative;
+    margin-bottom: 50px;
     /*-webkit-perspective: 500px;*/
     /*-moz-perspective: 500px;*/
     /*-ms-perspective: 500px;*/
@@ -115,10 +116,8 @@
             margin-top: -35px;
             width: 40px;
             height: 60px;
-            background: #000;
-            background-color: rgba(0,0,0,0.6);
-            /*background-color: rgba(180,180,180,0.5);*/
-            /*color: #848484;*/
+            background: #E82734;
+            background-color: rgba(232, 39, 52,0.5);
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
             border-radius: 5px;
@@ -132,17 +131,20 @@
         }
 
         &:hover > label {
-            background-color: #90C3D4;
+            background: #848484;
+            background-color: rgba(180,180,180,0.5);
             width: 60px;
         }
 
     }
 
+    .prev > label,
+    .next > label {
+        font-size: 26px;
+        color: #fff;
+    }
     .prev > label {
         right: 0;
-        color: #fff;
-        font-size: 22px;
-
 
         &::before {
             @apply --icons;

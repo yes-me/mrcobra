@@ -15,6 +15,7 @@ $attachment_id = get_post_meta($post->ID, 'image', true);
 $size = "large"; // (thumbnail, medium, large, full or custom size)
 
 $image = wp_get_attachment_image_src( $attachment_id, $size );
+$credit = get_post_meta($post->ID, 'photo_credit', true);
 ?>
 
 <div class="component tile-size-2">
@@ -28,9 +29,13 @@ $image = wp_get_attachment_image_src( $attachment_id, $size );
 						<div class="pub-info">
 							<span class="source"><?php echo get_post_meta($post->ID, 'description', true); ?></span>
 							<span class="pub-date"><?php echo get_post_meta($post->ID, 'publish_date', true); ?></span>
-						</div>
-						<div class="photo-credit">
-							<?php echo get_post_meta($post->ID, 'photo_credit', true); ?>
+
+							<?php if ( $credit ) { ?>
+								<div class="credit">
+									<span class="text">Photo: </span>
+									<span><?php echo $credit; ?></span>
+								</div>
+							<?php } ?>
 						</div>
 					</div>
 				</a>

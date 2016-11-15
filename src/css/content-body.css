@@ -1,9 +1,5 @@
 /*some resets*/
 
-* {
-    box-sizing: border-box;
-}
-
 
 html,body{
     padding:0;
@@ -122,6 +118,7 @@ body {
     font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     color: var(--black);
     padding: 30px 0 40px;
+    box-sizing: border-box;
 
 
     @media (--at-least-tablet) {
@@ -143,7 +140,7 @@ body {
 
 .entry-header {
     width: 100%;
-    background-color: #008800;
+    background-color: var(--theme-dark);
     margin-bottom: 50px;
     text-align: center;
     color: #fff;
@@ -160,8 +157,8 @@ body {
         &:after {
              content: ' ';
              display: block;
-             margin: 20px auto 20px auto;
-             border: 1px solid white;
+             margin: 30px auto 10px auto;
+             border: 1px solid var(--dark-cyan);
              width: 170px;
          }
     }
@@ -190,6 +187,8 @@ body {
 
 .content-body {
 
+    margin-top: 51px;
+
     p {
         padding: 0;
         line-height: 30px;
@@ -207,15 +206,6 @@ body {
         left: 0;
         z-index: 1;
     }
-
-    @media (--at-least-tablet) {
-
-        position: relative;
-        top: 66px;
-        margin-bottom: 46px;
-    }
-
-
 }
 
 
@@ -272,9 +262,9 @@ img {
     margin-right: 1.5em;
 }
 
-.home-page .show-case {
+.gallery .show-case {
 
-    background-image: url("../images/light-house-lrg.jpeg");
+    background-image: url("../images/home-lrg.jpg");
 
     width: 100%;
     min-height: 600px;

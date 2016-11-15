@@ -7,33 +7,20 @@
 	<div class="slider-content">
 		<a href="#" class="slider-link1">
 			<figure>
-				<img class='num0' src="http://a2.fssta.com/content/dam/fsdigital/fscom/nascar/images/2016/07/25/3_a_160725_nrh_winners_weekend_indy.vresize.1200.675.high.1.jpg" alt>
-
-				<figcaption>
-					<h3 class="slider-caption">Slide 1</h3>
-				</figcaption>
+				<img class='num0' src="wp-content/themes/mrcobra/images/slide1.jpg" alt>
 			</figure>
-
 		</a>
 
 		<a href="#" class="slider-link2">
 			<figure>
-				<img class='num1' src="http://a2.fssta.com/content/dam/fsdigital/fscom/nascar/images/2016/07/25/3_a_160725_nrh_dale_jr_update.vresize.1200.675.high.1.jpg" alt>
-				<figcaption>
-					<h3 class="slider-caption">Slide 2 </h3>
-				</figcaption>
+				<img class='num1' src="wp-content/themes/mrcobra/images/slide2.jpg" alt>
 			</figure>
-
 		</a>
 
 		<a href="#" class="slider-link3">
 			<figure>
-				<img class='num2' src="http://a2.fssta.com/content/dam/fsdigital/fscom/nascar/images/2016/07/25/3_a_160724_nvl_kybusch_int_indy.vresize.1200.675.high.1.jpg" alt>
-				<figcaption>
-					<h3 class="slider-caption">Slide 3</h3>
-				</figcaption>
+				<img class='num2' src="wp-content/themes/mrcobra/images/slide3.jpg" alt>
 			</figure>
-
 		</a>
 
 	</div>

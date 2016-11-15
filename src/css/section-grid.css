@@ -8,6 +8,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     max-width: 767px;
+    box-sizing: border-box;
 
     figure {
         margin: 0;

@@ -1,14 +1,15 @@
 
+<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+
 <div id="content-body" class="content-body gallery">
 
-	<?php get_template_part( 'template-parts/content', 'slides' ); ?>
-
+	<div class="show-case" style="background-image: url('<?php echo $backgroundImg[0]; ?>')"></div>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
 		<section id="section-grid" class="section-grid">
 
-			<span class="section-heading">Mr. Cobra Gallery</span>
+			<span class="section-heading">Mr. Cobra exclusive collections gallery</span>
 
 
 			<div class="entry-content">

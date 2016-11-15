@@ -1,7 +1,7 @@
 .wild-west {
 
     color: #fff;
-    background-color: var(--darkest-grey);
+    background-color: var(--light-grey);
 
     .section-grid {
         @media (--at-least-tablet) {

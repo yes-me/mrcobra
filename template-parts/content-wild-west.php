@@ -4,13 +4,23 @@
 
     <?php while ( have_posts() ) : the_post(); ?>
 
+        <header class="entry-header">
+
+            <div class="intro">
+
+                <?php the_title( '<h1 class="title">', '</h1>' ); ?>
+
+
+                <?php if( get_field('description') ): ?>
+                    <div class="description"> <?php the_field('description'); ?></div>
+                <?php endif; ?>
+
+
+            </div>
+
+        </header>
 
         <section id="section-grid" class="section-grid">
-
-            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-            <div class="description">
-                <?php echo get_post_meta($post->ID, 'description', true); ?>
-            </div>
 
             <div class="entry-content">
                 <?php the_content(); ?>
